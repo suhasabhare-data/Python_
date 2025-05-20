@@ -1,0 +1,3 @@
+regex_pat=r"[,.]"
+import re
+print("\n".join(re.split(regex_pat,input())))
