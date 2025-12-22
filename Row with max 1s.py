@@ -16,15 +16,15 @@
 # # 1 ≤ arr.size(), arr[i].size() ≤ 103
 # # 0 ≤ arr[i][j] ≤ 1 
 
-# # From <https://www.geeksforgeeks.org/problems/row-with-max-1s0023/1> 
-# # import numpy as np
-# # class Solution:
-# #     def rowWithMax1s(self, arr):
-# #         # code here
-# #         arr = np.array(arr)
-# #         row_sums = np.sum(arr, axis=1)
-# #         max_index = np.argmax(row_sums)
-# #         return max_index
+# From <https://www.geeksforgeeks.org/problems/row-with-max-1s0023/1> 
+import numpy as np
+class Solution:
+    def rowWithMax1s(self, arr):
+        # code here
+        arr = np.array(arr)
+        row_sums = np.sum(arr, axis=1)
+        max_index = np.argmax(row_sums)
+        return max_index
 # Find the row with maximum number of 1s
 
 # From <https://www.geeksforgeeks.org/dsa/find-the-row-with-maximum-number-1s/> 
@@ -213,4 +213,5 @@
 # Auxiliary Space:  O(1)
 
 # From <https://www.geeksforgeeks.org/dsa/find-the-row-with-maximum-number-1s/> 
+
 
